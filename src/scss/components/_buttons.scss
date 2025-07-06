@@ -1,0 +1,34 @@
+.button, .button__transparent{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: clamp(0.875rem, 0.8068rem + 0.3636vw, 1.125rem);
+  text-transform: uppercase;
+  font-weight: 300;
+  width: clamp(5.75rem, 4.5227rem + 6.5455vw, 10.25rem);
+  height: clamp(2rem, 1.7273rem + 1.4545vw, 3rem);
+
+  transition-duration: 0.3s;
+}
+
+.button{
+  background-color: var(--color-accent);
+}
+
+.button:hover{
+    border: 1px solid;
+    border-color: #aaaaaa;
+    background-color: unset;
+}
+
+.button__transparent{
+  border: 1px solid;
+  border-color: #aaaaaa;
+}
+
+.button__transparent:hover{
+  border: none;
+  background-color: var(--color-accent);
+}
