@@ -19,22 +19,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const controlsBtn = document.querySelectorAll('.slider__controls-btn');
 
   function goToSlide(index) {
-  const allContents = document.querySelectorAll('.slider__content');
-  allContents.forEach(content => content.classList.remove('is-active'));
+    const allContents = document.querySelectorAll('.slider__content');
+    allContents.forEach(content => content.classList.remove('is-active'));
 
-  setTimeout(() => {
     slidesContainer.style.transform = `translateX(-${index * 100}%)`;
 
     controlsBtn.forEach(btn => btn.classList.remove('is-active'));
     controlsBtn[index].classList.add('is-active');
 
-    const currentSlide = document.querySelectorAll('.slider__slide')[index];
-    const content = currentSlide.querySelector('.slider__content');
-    content.classList.add('is-active');
-
-    currentIndex = index;
-  }, 600);
-}
+    setTimeout(() => {
+      const currentSlide = document.querySelectorAll('.slider__slide')[index];
+      const content = currentSlide.querySelector('.slider__content');
+      content.classList.add('is-active');
+      currentIndex = index;
+    }, 300);
+  }
 
  controlsBtn.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -57,6 +56,37 @@ document.addEventListener('DOMContentLoaded', () => {
     clearInterval(interval);
     startInterval();
   }
+
+  let startX = 0;
+  let endX = 0;
+  const swipeThreshold = 50; // Минимальное расстояние для свайпа в пикселях
+
+  slidesContainer.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slidesContainer.addEventListener('touchmove', (e) => {
+    endX = e.touches[0].clientX;
+  });
+
+  slidesContainer.addEventListener('touchend', () => {
+    const distance = endX - startX;
+
+  if (Math.abs(distance) > swipeThreshold) {
+    if (distance < 0) {
+      // свайп влево — следующий слайд
+      const nextIndex = (currentIndex + 1) % slideCount;
+      goToSlide(nextIndex);
+    } else {
+      // свайп вправо — предыдущий слайд
+      const prevIndex = (currentIndex - 1 + slideCount) % slideCount;
+      goToSlide(prevIndex);
+    }
+
+    resetInterval(); // сбрасываем автоперелистывание
+  }
+});
+
 
   // Старт
   startInterval();

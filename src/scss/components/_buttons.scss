@@ -28,7 +28,7 @@
   border-color: #aaaaaa;
 }
 
-.button__transparent:hover .button__transparent:active{
+.button__transparent:hover, .button__transparent:active{
   border: none;
   background-color: var(--color-accent);
 }

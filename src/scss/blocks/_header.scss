@@ -2,14 +2,12 @@
   background-color: var(--color-blue-dark);
   color: var(--color-white);
 
-  // Top bar section (desktop)
   &__top {
     font-size: 16px;
     border-bottom: 1px solid;
     border-color: var(--color-border-grey);
   }
 
-  // Container for inner content
   &__inner {
     height: 100%;
     display: flex;
@@ -18,13 +16,11 @@
     align-items: center;
   }
 
-  // Contact links section
   &__contacts {
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;
 
-    // Individual contact link
     &-link {
       display: flex;
       align-items: center;
@@ -32,18 +28,15 @@
       padding: 8px;
     }
 
-    // Mobile-specific contact container
     &.header__contacts-mobile {
       padding: 18px;
     }
   }
 
-  // Bottom header section (desktop)
   &__bottom {
     height: 90px;
   }
 
-  // Navigation menu
   &__menu {
     &-list {
       display: flex;
@@ -54,7 +47,6 @@
       padding: 15px 5px;
       position: relative;
 
-      // Active link underline
       &.is-active::after {
         content: "";
         position: absolute;
@@ -65,13 +57,12 @@
         background-color: var(--color-accent);
       }
 
-      &:hover{
+      &:hover, &:active{
         color: var(--color-accent);
       }
     }
   }
 
-  // Header buttons like search, login, burger, etc.
   &__actions {
     display: flex;
     align-items: center;
@@ -83,7 +74,7 @@
       transition-duration: var(--transition-duration);
     }
 
-    &-btn:hover {
+    &-btn:hover, &-btn:active {
       color: var(--color-accent);
     }
 
@@ -92,7 +83,6 @@
       stroke: currentColor;
     }
 
-    // Burger icon container
     &-burger {
       height: 26px;
       width: 26px;
@@ -100,7 +90,6 @@
       margin-left: 10px;
     }
 
-    // Three-line burger menu using pseudo-elements
     &-burger::before {
       content: "";
       position: absolute;
@@ -114,14 +103,13 @@
       transition-duration: var(--transition-duration);
     }
 
-    &-burger:hover::before {
+    &-burger:hover::before, &-burger:active::before {
       background-color: var(--color-accent);
       box-shadow: 7px 10px 0 0 var(--color-accent),
                   7px -10px 0 0 var(--color-accent);
     }
   }
 
-  // Fullscreen mobile menu container
   &__inner-mobile {
     display: flex;
     flex-direction: column;
@@ -140,7 +128,6 @@
     }
   }
 
-  // Mobile menu centering logic
   &__menu.header__menu-mobile {
     position: absolute;
     top: 50%;
@@ -154,7 +141,7 @@
     }
   }
 
-  // Close button for mobile menu (X icon)
+
   &__close-mobile {
     position: relative;
     width: 28px;
@@ -180,7 +167,6 @@
     transform: translate(-50%, -50%) rotate(-45deg);
   }
 
-  // Top section for mobile layout
   &__top-mobile {
     display: flex;
     justify-content: space-between;
@@ -190,7 +176,6 @@
   }
 }
 
-// Tablet adjustments
 @media (max-width: 830px) {
   .header__menu-list {
     column-gap: 5px;
@@ -213,14 +198,12 @@
   }
 }
 
-// Hide burger on tablets/desktops
 @media (min-width: 641px) {
   .header__actions-burger {
     display: none;
   }
 }
 
-// Mobile-specific styles
 @media (max-width: 640px) {
   .header__menu {
     display: none;
@@ -232,5 +215,9 @@
 
   .header__top {
     display: none;
+  }
+
+  .header__menu-link{
+    font-size: 24px;
   }
 }
