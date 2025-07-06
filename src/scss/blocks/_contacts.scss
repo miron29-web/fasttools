@@ -121,3 +121,9 @@
     min-height: 400px;
   }
 }
+
+@media (max-width: 400px) {
+  .contacts__form-capcha{
+    width: 130px;
+  }
+}

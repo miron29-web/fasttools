@@ -602,7 +602,8 @@ svg {
 }
 
 .about__inner {
-  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .about__title {
@@ -1122,6 +1123,11 @@ svg {
 }
 
 @media (max-width: 400px) {
+  .button,
+  .button__transparent {
+    width: 8.125rem;
+  }
+
   .about__title {
     margin-bottom: 0.25rem;
   }
@@ -1134,5 +1140,9 @@ svg {
     display: grid;
     grid-template-columns: unset;
     gap: 1.25rem;
+  }
+
+  .contacts__form-capcha {
+    width: 8.125rem;
   }
 }

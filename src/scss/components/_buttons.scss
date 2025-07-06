@@ -32,3 +32,9 @@
   border: none;
   background-color: var(--color-accent);
 }
+
+@media (max-width: 400px) {
+  .button, .button__transparent{
+    width: 130px;
+  }
+}
