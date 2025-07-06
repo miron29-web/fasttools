@@ -7,8 +7,8 @@
   font-size: clamp(0.875rem, 0.8068rem + 0.3636vw, 1.125rem);
   text-transform: uppercase;
   font-weight: 300;
-  width: clamp(5.75rem, 4.5227rem + 6.5455vw, 10.25rem);
-  height: clamp(2rem, 1.7273rem + 1.4545vw, 3rem);
+  width: 164px;
+  height: 48px;
 
   transition-duration: 0.3s;
 }
@@ -17,7 +17,7 @@
   background-color: var(--color-accent);
 }
 
-.button:hover{
+.button:hover, .button:active{
     border: 1px solid;
     border-color: #aaaaaa;
     background-color: unset;
@@ -28,7 +28,7 @@
   border-color: #aaaaaa;
 }
 
-.button__transparent:hover{
+.button__transparent:hover .button__transparent:active{
   border: none;
   background-color: var(--color-accent);
 }

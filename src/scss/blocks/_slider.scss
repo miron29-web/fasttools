@@ -103,10 +103,16 @@
 
 @media (max-width: 800px) {
   .slider__content-title{
-    margin-bottom: 0;
+    margin-bottom: 4px;
   }
 
   .slider__content-text{
-    margin-bottom: 6px;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider__content-actions{
+    display: none;
   }
 }
