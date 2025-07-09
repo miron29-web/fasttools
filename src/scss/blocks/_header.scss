@@ -141,30 +141,13 @@
     }
   }
 
-
   &__close-mobile {
     position: relative;
-    width: 28px;
-    height: 28px;
-    padding: 20px;
-    margin-right: 5px;
   }
 
   &__close-mobile::before,
   &__close-mobile::after {
-    content: "";
     position: absolute;
-    width: 24px;
-    height: 2px;
-    background-color: var(--color-white);
-  }
-
-  &__close-mobile::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-
-  &__close-mobile::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
   }
 
   &__top-mobile {

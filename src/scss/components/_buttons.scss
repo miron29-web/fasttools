@@ -38,3 +38,26 @@
     width: 130px;
   }
 }
+
+.btn-close{
+  width: 28px;
+  height: 28px;
+  padding: 20px;
+  margin-right: 5px;
+
+  &::before, &::after{
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-white);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::before{
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::after{
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
