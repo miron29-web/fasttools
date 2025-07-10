@@ -22,8 +22,23 @@ const sliderThumbs = document.querySelectorAll('.catalog__slider-thumb');
 
 sliderThumbs.forEach(th => {
   th.addEventListener('click', () => {
-    let mainImg = currentSlider.querySelector('.catalog__slider-img');
-    let url = th.src;
-    mainImg.src = url;
+    const allThumbs = currentSlider.querySelectorAll('.catalog__slider-thumb');
+    allThumbs.forEach(thumb => thumb.classList.remove('is-active'));
+
+    th.classList.add('is-active');
+
+
+    const mainImg = currentSlider.querySelector('.catalog__slider-img');
+    mainImg.classList.add('fade-out');
+
+    setTimeout(() => {
+      mainImg.src = th.src;
+      mainImg.classList.remove('fade-out');
+      mainImg.classList.add('fade-in');
+
+      setTimeout(() => {
+        mainImg.classList.remove('fade-in');
+      }, 300);
+    }, 300);
   });
 });

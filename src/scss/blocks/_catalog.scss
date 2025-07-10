@@ -166,6 +166,17 @@
       max-width: 100%;
       max-height: 70vh;
       object-fit: contain;   
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      
+      &.fade-out {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+
+      &.fade-in {
+        opacity: 1;
+        transform: scale(1);
+      }
     }
 
     &-thumbnails{
@@ -181,107 +192,16 @@
       height: 80px;
       object-fit: cover;
       cursor: pointer;
+
+      opacity: 0.5;
+
+      &.is-active{
+        opacity: 1;
+      }
     }
-    
+   
   }
-  // &__gallery{
-  //   display: flex;
-  //   flex-direction: column;
-
-  //   position: fixed;
-  //   inset: 0;
-  //   width: 100%;
-  //   height: 100vh;
-  //   z-index: 1000;
-  //   background-color: var(--color-blue-dark);
-
-  //   opacity: 0;
-  //   transform: translateY(-100%);
-  //   transition: transform 0.3s ease;
-
-  //   &.is-active{
-  //     opacity: 1;
-  //     transform: translateY(0);
-  //   }
-
-  //   &-top{
-  //     position: relative;
-  //     width: 100%;
-  //     height: 60px;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: end;
-  //   }
-
-  //   &-btn {
-  //     position: relative;
-  //     display: flex;
-  //   }
-
-  //   &-btn::before,
-  //   &-btn::after {
-  //     position: absolute;
-  //   }
-
-  //   &-container{
-  //     max-height: 90%;
-  //     flex: 1;
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     position: relative;
-  //   }
-
-  //   &-togle{
-  //     position: absolute;
-
-  //     top: 13%;
-  //     width: 20%;
-  //     bottom: 0;
-
-  //     color: var(--color-accent);
-
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //     z-index: 1000;
-
-  //     &:first-child{
-  //       left: 0;
-  //     }
-  //     &:last-child{
-  //       right: 0;
-  //     }
-
-  //     &-icon{
-  //       cursor: pointer;
-  //     }
-  //   }
-
-  //   &-images{
-  //     display: flex;
-  //     justify-content: center;
-  //     max-width: 100%;
-  //     max-height: 100%;
-  //     position: relative;
-  //   }
-
-  //   &-image{
-  //     object-fit: contain;
-  //     display: block;
-  //     opacity: 0;
-  //     transition: opacity 0.3s ease;
-
-  //     padding: 20px;
-
-  //     display: none;
-
-  //     &.is-active {
-  //       opacity: 1;
-  //       display: block;
-  //     }
-  //   }
-  // }
+  
 }
 
 @media (max-width: 700px) {
