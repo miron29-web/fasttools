@@ -12,113 +12,124 @@
 
 <body>
   <header class="header">
-  <div class="header__top">
-    <div class="header__inner container">
-      <div class="header__contacts">
-        <a class="header__contacts-link link-accent" href="tel:+79181234567">
-          <svg class="header__contacts-icon" width="20" height="20">
-            <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
-          </svg>
-          +7 (918) 123-45-67
-        </a>
-        <a class="header__contacts-link link-accent" href="mailto:fasttools@gmail.com">
-          <svg class="header__contacts-icon" width="20" height="20">
-            <use xlink:href="./img/icons/sprites/sprite-mono.svg#mail"></use>
-          </svg>
-          fasttools@gmail.com
-        </a>
-      </div>
-      <div class="header__socials socials">
-        <a class="header__socials-link link-accent" href="https://wa.me/79181234567" target="_blank" rel="noopener noreferrer">
-          <svg class="header__socials-icon" width="20" height="20">
-            <use xlink:href="./img/icons/sprites/sprite-mono.svg#whatsapp"></use>
-          </svg>
-        </a>
-        <a class="header__socials-link link-accent" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
-          <svg class="header__socials-icon" width="20" height="20">
-            <use xlink:href="./img/icons/sprites/sprite-mono.svg#telegram"></use>
-          </svg>
-        </a>
-        <a class="header__socials-link link-accent" href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
-          <svg class="header__socials-icon" width="20" height="20">
-            <use xlink:href="./img/icons/sprites/sprite-mono.svg#instagram"></use>
-          </svg>
-        </a>
+  <div class="header__top top-header">
+    <div class="container">
+      <div class="top-header__inner">
+        <div class="top-header__contacts contacts">
+          <a class="contacts__link link-accent" href="tel:+79181234567" aria-label="link phone number">
+            <svg class="contacts__icon" width="20" height="20">
+              <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
+            </svg>
+            +7 (918) 123-45-67
+          </a>
+          <a class="contacts__link link-accent" href="mailto:fasttools@gmail.com" aria-label="link email">
+            <svg class="contacts__icon" width="20" height="20">
+              <use xlink:href="./img/icons/sprites/sprite-mono.svg#mail"></use>
+            </svg>
+            fasttools@gmail.com
+          </a>
+        </div>
+        <div class="header__socials socials">
+          <a class="socials__link link-accent" href="https://wa.me/79181234567" target="_blank" rel="noopener noreferrer" aria-label="link whatsapp">
+            <svg class="socials__icon" width="20" height="20">
+              <use xlink:href="./img/icons/sprites/sprite-mono.svg#whatsapp"></use>
+            </svg>
+          </a>
+          <a class="socials__link link-accent" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer" aria-label="link telegram">
+            <svg class="socials__icon" width="20" height="20">
+              <use xlink:href="./img/icons/sprites/sprite-mono.svg#telegram"></use>
+            </svg>
+          </a>
+          <a class="socials__link link-accent" href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" aria-label="link instagram">
+            <svg class="socials__icon" width="20" height="20">
+              <use xlink:href="./img/icons/sprites/sprite-mono.svg#instagram"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="header__bottom">
-    <div class="header__inner container">
-      <a href="/" class="header__logo logo">
-        <img src="./img/logo.svg" alt="Fasttools logo" class="header__logo-image" width="173" height="57">
-      </a>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
-          <li class="header__menu-item">
-            <a href="#!" class="header__menu-link link-accent is-active">Домой</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link link-accent">Каталог</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link link-accent">Контакты</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link link-accent">О нас</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="" class="header__menu-link link-accent">Блог</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="header__actions">
-        <button class="header__actions-btn" type="button">
-          <svg class="header__actions-icon" width="26" height="26">
-            <use xlink:href="./img/icons/sprites/sprite-mono.svg#basket"></use>
-          </svg>
-        </button>
-        <button class="header__actions-btn" type="button">
-          <svg class="header__actions-icon" width="26" height="26">
-            <use xlink:href="./img/icons/sprites/sprite-mono.svg#account"></use>
-          </svg>
-        </button>
-        <button type="button" class="header__actions-burger">
-        </button>
+  <div class="header__body body-header">
+    <div class="container">
+      <div class="body-header__inner">
+        <a class="body-header__logo logo" href="/">
+          <img class="logo__image" src="./img/logo.svg" alt="Fasttools logo" width="173" height="57">
+        </a>
+        <nav class="body-header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#!" class="menu__link link-accent is-active" aria-label="link home">Домой</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__link link-accent" aria-label="link catalog">Каталог</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__link link-accent" aria-label="link contacts">Контакты</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__link link-accent" aria-label="about">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="#!" class="menu__link link-accent" aria-label="blog">Блог</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="body-header__actions actions">
+          <button class="actions__button button-auth" type="button" aria-label="authorization button">
+            <svg class="actions__icon" width="26" height="26">
+              <use xlink:href="./img/icons/sprites/sprite-mono.svg#account"></use>
+            </svg>
+          </button>
+          <button class="actions__burger burger" type="button" aria-label="burger button mobile menu">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
       </div>
-      <div class="header__inner-mobile">
-        <div class="header__top-mobile">
-          <div class="header__contacts header__contacts-mobile">
-            <a class="header__contacts-link" href="tel:+79181234567">
-              <svg class="header__contacts-icon" width="20" height="20">
+    </div>
+  </div>
+  <div class="header__menu-mobile mobile-menu">
+    <div class="mobile-menu__inner">
+      <div class="mobile-menu__top">
+        <div class="container">
+          <div class="mobile-menu__contacts contacts">
+            <a class="contacts__link link-accent" href="tel:+79181234567" aria-label="link phone number">
+              <svg class="contacts__icon" width="20" height="20">
                 <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
               </svg>
               +7 (918) 123-45-67
             </a>
-            <a class="header__contacts-link" href="mailto:fasttools@gmail.com">
-              <svg class="header__contacts-icon" width="20" height="20">
+            <a class="contacts__link link-accent" href="mailto:fasttools@gmail.com" aria-label="link email">
+              <svg class="contacts__icon" width="20" height="20">
                 <use xlink:href="./img/icons/sprites/sprite-mono.svg#mail"></use>
               </svg>
               fasttools@gmail.com
-            </a>          
+            </a>
           </div>
-          <button class="header__close-mobile btn-close" type="button" aria-label="close menu button"></button>
         </div>
-        <nav class="header__menu header__menu-mobile">
-          <ul class="header__menu-list ">
-            <li class="header__menu-item ">
-              <a href="#!" class="header__menu-link link-accent is-active ">Домой</a>
+        <button class="mobile-menu__button-close close-button" type="button" aria-label="close menu button">
+          <span class="close-button__line"></span>
+          <span class="close-button__line"></span>
+        </button>
+      </div>
+      <div class="mobile-menu__body">
+        <nav class="mobile-menu__menu">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="#!" class="mobile-menu__link link-accent is-active" aria-label="link home">Домой</a>
             </li>
-            <li class="header__menu-item ">
-              <a href="#!" class="header__menu-link link-accent">Каталог</a>
+            <li class="mobile-menu__item">
+              <a href="#!" class="mobile-menu__link link-accent" aria-label="link catalog">Каталог</a>
             </li>
-            <li class="header__menu-item">
-              <a href="#!" class="header__menu-link link-accent">Контакты</a>
+            <li class="mobile-menu__item">
+              <a href="#!" class="mobile-menu__link link-accent" aria-label="link contacts">Контакты</a>
             </li>
-            <li class="header__menu-item">
-              <a href="#!" class="header__menu-link link-accent">О нас</a>
+            <li class="mobile-menu__item">
+              <a href="#!" class="mobile-menu__link link-accent" aria-label="link about">О нас</a>
             </li>
-            <li class="header__menu-item">
-              <a href="#!" class="header__menu-link link-accent">Блог</a>
+            <li class="mobile-menu__item">
+              <a href="#!" class="mobile-menu__link link-accent" aria-label="link blog">Блог</a>
             </li>
           </ul>
         </nav>
@@ -128,47 +139,53 @@
 </header>
   <section class="slider">
   <div class="slider__slides">
-    <div class="slider__slide" data="slide1">
-      <img src="./img/slider/slide1.jpg" alt="" class="slider__slide-image">
-      <div class="slider__inner container">
-        <div class="slider__content is-active">
-          <h2 class="slider__content-title title-lg">Точная резка металла любой сложности</h2>
-          <p class="slider__content-text">
-            От прототипа до серийного изделия — с максимальной точностью и чистотой среза.
-          </p>
-          <div class="slider__content-actions">
-            <a href="#!" class="slider__content-button button">Каталог</a>
-            <a href="#!" class="slider__content-button button__transparent">Заказать</a>
+    <div class="slider__slide slide" data="slide1">
+      <img src="./img/slider/slide1.jpg" alt="" class="slide__image">
+      <div class="slide__inner">
+        <div class="container">
+          <div class="slide__content content-slide is-active">
+            <h2 class="content-slide__title title-lg">Точная резка металла любой сложности</h2>
+            <p class="content-slide__text">
+              От прототипа до серийного изделия — с максимальной точностью и чистотой среза.
+            </p>
+            <div class="content-slide__actions">
+              <a href="#!" class="content-slide_actions-button button">Каталог</a>
+              <a href="#!" class="content-slide__actions-button button--transparent">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="slider__slide" data="slide2">
-      <img src="./img/slider/slide2.jpg" alt="" class="slider__slide-image">
-      <div class="slider__inner container">
-        <div class="slider__content">
-          <h2 class="slider__content-title title-lg">Инженерные решения под ваш проект</h2>
-          <p class="slider__content-text">
-           Разрабатываем изделия с нуля и сопровождаем до результата.
-          </p>
-          <div class="slider__content-actions">
-            <a href="#!" class="slider__content-button button">Каталог</a>
-            <a href="#!" class="slider__content-button button__transparent">Заказать</a>
+    <div class="slider__slide slide" data="slide2">
+      <img src="./img/slider/slide2.jpg" alt="" class="slide__image">
+      <div class="slide__inner">
+        <div class="container">
+          <div class="slide__content content-slide is-active">
+            <h2 class="content-slide__title title-lg">Инженерные решения под ваш проект</h2>
+            <p class="content-slide__text">
+              Разрабатываем изделия с нуля и сопровождаем до результата.
+            </p>
+            <div class="content-slide__actions">
+              <a href="#!" class="content-slide_actions-button button">Каталог</a>
+              <a href="#!" class="content-slide__actions-button button--transparent">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="slider__slide" data="slide3">
-      <img src="./img/slider/slide3.jpg" alt="" class="slider__slide-image">
-      <div class="slider__inner container">
-        <div class="slider__content">
-          <h2 class="slider__content-title title-lg">Современные технологии обработки металла</h2>
-          <p class="slider__content-text">
-            Высокоточное оборудование и квалифицированные специалисты.
-          </p>
-          <div class="slider__content-actions">
-            <a href="#!" class="slider__content-button button">Каталог</a>
-            <a href="#!" class="slider__content-button button__transparent">Заказать</a>
+    <div class="slider__slide slide" data="slide3">
+      <img src="./img/slider/slide3.jpg" alt="" class="slide__image">
+      <div class="slide__inner">
+        <div class="container">
+          <div class="slide__content content-slide is-active">
+            <h2 class="content-slide__title title-lg">Современные технологии обработки металла</h2>
+            <p class="content-slide__text">
+               Высокоточное оборудование и квалифицированные специалисты.
+            </p>
+            <div class="content-slide__actions">
+              <a href="#!" class="content-slide_actions-button button">Каталог</a>
+              <a href="#!" class="content-slide__actions-button button--transparent">Заказать</a>
+            </div>
           </div>
         </div>
       </div>
@@ -177,92 +194,102 @@
   <div class="slider__controls">
   </div>
 </section>
-
-
   <section class="intro">
-  <div class="intro__inner container">
-    <h2 class="intro__title title-md">
-      Каждое изделие под вашу задачу
-    </h2>
-    <p class="intro__text">
-      Лазерная резка и запатентованные решения от Fasttools
-    </p>
+  <div class="container">
+    <div class="intro__inner">
+      <h2 class="intro__title title-md">
+        Каждое изделие под вашу задачу
+      </h2>
+      <p class="intro__text">
+        Лазерная резка и запатентованные решения от Fasttools
+      </p>
+    </div>
   </div>
 </section>
   <section class="about">
-  <div class="about__inner container">
-    <h2 class="about__title title-md">
-      О нас
-    </h2>
-    <p class="about__text">
-      Мы — производственная компания, специализирующаяся на лазерной резке металла и разработке уникальных изделий под ключ. Сочетая современные технологии и инженерный подход, мы создаем решения, которые работают — от идеи до готового продукта.
-      Наши клиенты — это частные мастера, промышленные предприятия, дизайнеры и инженеры. Для каждого мы предлагаем индивидуальный подход и безупречное качество исполнения.
-    </p>
+  <div class="container">
+    <div class="about__inner">
+      <h2 class="about__title title-md">
+        О нас
+      </h2>
+      <p class="about__text">
+        Мы — производственная компания, специализирующаяся на лазерной резке металла и разработке уникальных изделий под ключ. Сочетая современные технологии и инженерный подход, мы создаем решения, которые работают — от идеи до готового продукта.
+        Наши клиенты — это частные мастера, промышленные предприятия, дизайнеры и инженеры. Для каждого мы предлагаем индивидуальный подход и безупречное качество исполнения.
+      </p>
+    </div>
   </div>
 </section>
   <section class="benefits">
-  <div class="benefits__inner container">
-    <h2 class="benefits__title title-md">
-      Удобство и надёжность на каждом этапе
-    </h2>
-    <div class="benefits__list">
-      <div class="benefits__card">
-        <div class="benefits__card-image">
-          <img class="benefits__card-img" src="./img/card_delivery.jpg" alt="">
-        </div>
-        <div class="benefits__card-content">
-          <div class="benefits__card-icon">
-            <svg class="benefits__card-svg" width="40" height="40">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#delivery"></use>
-            </svg>
-          </div>
-          <div class="benefits__card-text">
-            <h3 class="benefits__card-title">
-              Быстрая доставка
-            </h3>
-            <p class="benefits__card-desc">
-              Изготовление и отправка за 3-5 рабочих дней
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="benefits__card">
-        <div class="benefits__card-image">
-          <img class="benefits__card-img" src="./img/card_order.jpg" alt="">
-        </div>
-        <div class="benefits__card-content">
-          <div class="benefits__card-icon">
-            <svg class="benefits__card-svg" width="40" height="40">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#order"></use>
-            </svg>
-          </div>
-          <div class="benefits__card-text">
-            <h3 class="benefits__card-title">
-              Индивидуальные заказы
-            </h3>
-            <p class="benefits__card-desc">
-              Проектируем и режем под ваш чертёж
-            </p>
+  <div class="container">
+    <div class="benefits__inner">
+      <h2 class="benefits__title title-md">
+        Удобство и надёжность на каждом этапе
+      </h2>
+      <div class="benefits__row">
+        <div class="benefits__column">
+          <div class="benefits__card card-benefits">
+            <div class="card-benefits__image-wrap">
+              <img class="card-benefits__image" src="./img/card_delivery.jpg" alt="">
+            </div>
+            <div class="card-benefits__content">
+              <div class="card-benefits__icon-wrap">
+                <svg class="card-benefits__icon" width="40" height="40">
+                  <use xlink:href="./img/icons/sprites/sprite-mono.svg#delivery"></use>
+                </svg>
+              </div>
+              <div class="card-benefits__text-wrap">
+                <h3 class="card-benefits__title">
+                  Быстрая доставка
+                </h3>
+                <p class="card-benefits__desc">
+                  Изготовление и отправка за 3-5 рабочих дней
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="benefits__card">
-        <div class="benefits__card-image">
-          <img class="benefits__card-img" src="./img/card_security.jpg" alt="">
-        </div>
-        <div class="benefits__card-content">
-          <div class="benefits__card-icon">
-            <svg class="benefits__card-svg" width="40" height="40">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#pay"></use>
-            </svg>
+        <div class="benefits__column">
+          <div class="benefits__card card-benefits">
+            <div class="card-benefits__image-wrap">
+              <img class="card-benefits__image" src="./img/card_order.jpg" alt="">
+            </div>
+            <div class="card-benefits__content">
+              <div class="card-benefits__icon-wrap">
+                <svg class="card-benefits__icon" width="40" height="40">
+                  <use xlink:href="./img/icons/sprites/sprite-mono.svg#order"></use>
+                </svg>
+              </div>
+              <div class="card-benefits__text-wrap">
+                <h3 class="card-benefits__title">
+                  Индивидуальные заказы
+                </h3>
+                <p class="card-benefits__desc">
+                  Проектируем и режем под ваш чертёж
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="benefits__card-text">
-            <h3 class="benefits__card-title">
-              Безопасная оплата
-            </h3>
-            <p class="benefits__card-desc">
-              Онлайн-оплата картой или по счёту
-            </p>
+        </div>
+        <div class="benefits__column">
+          <div class="benefits__card card-benefits">
+            <div class="card-benefits__image-wrap">
+              <img class="card-benefits__image" src="./img/card_security.jpg" alt="">
+            </div>
+            <div class="card-benefits__content">
+              <div class="card-benefits__icon-wrap">
+                <svg class="card-benefits__icon" width="40" height="40">
+                  <use xlink:href="./img/icons/sprites/sprite-mono.svg#pay"></use>
+                </svg>
+              </div>
+              <div class="card-benefits__text-wrap">
+                <h3 class="card-benefits__title">
+                  Безопасная оплата
+                </h3>
+                <p class="card-benefits__desc">
+                  Онлайн-оплата картой или по счёту
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -270,295 +297,319 @@
   </div>
 </section>
   <section class="ordering">
-  <div class="ordering__inner container">
-    <h2 class="ordering__title title-md">
-      Как заказать?
-    </h2>
-    <div class="ordering__steps">
-      <div class="ordering__steps-card">
-        <div class="ordering__steps-inner">
-          <span class="ordering__steps-number">
-            1
-          </span>
-          <h3 class="ordering__steps-title .title-md">
-            Оставьте заявку
-          </h3>
-          <p class="ordering__steps-text">
-            Заполните форму на сайте или свяжитесь с нами любым удобным способом. 
-            Расскажите, что нужно изготовить, и прикрепите файл (чертёж, эскиз, описание).
-          </p>
+  <div class="container">
+    <div class="ordering__inner">
+      <h2 class="ordering__title title-md">
+        Как заказать?
+      </h2>
+      <div class="ordering__steps steps-ordering">
+        <div class="steps-ordering__card">
+          <div class="steps-ordering__inner">
+            <span class="steps-ordering__number">
+              1
+            </span>
+            <h3 class="steps-ordering__title title-sm">
+              Оставьте заявку
+            </h3>
+            <p class="steps-ordering__text">
+              Заполните форму на сайте или свяжитесь с нами любым удобным способом. 
+              Расскажите, что нужно изготовить, и прикрепите файл (чертёж, эскиз, описание).
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="ordering__steps-card">
-        <div class="ordering__steps-inner">
-          <span class="ordering__steps-number">
-            2
-          </span>
-          <h3 class="ordering__steps-title .title-md">
-            Получите расчёт
-          </h3>
-          <p class="ordering__steps-text">
-            Мы уточним детали, подберём оптимальное решение, рассчитаем стоимость и сроки. Работаем быстро и по делу.
-          </p>
+        <div class="steps-ordering__card">
+          <div class="steps-ordering__inner">
+            <span class="steps-ordering__number">
+              2
+            </span>
+            <h3 class="steps-ordering__title title-sm">
+              Получите расчёт
+            </h3>
+            <p class="steps-ordering__text">
+              Мы уточним детали, подберём оптимальное решение, рассчитаем стоимость и сроки. Работаем быстро и по делу.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="ordering__steps-card">
-        <div class="ordering__steps-inner">
-          <span class="ordering__steps-number">
-            3
-          </span>
-          <h3 class="ordering__steps-title .title-md">
-            Согласование и запуск
-          </h3>
-          <p class="ordering__steps-text">
-            После утверждения стоимости и сроков запускаем проект в работу. Возможна предоплата или заключение договора.
-          </p>
+        <div class="steps-ordering__card">
+          <div class="steps-ordering__inner">
+            <span class="steps-ordering__number">
+              3
+            </span>
+            <h3 class="steps-ordering__title title-sm">
+              Согласование и запуск
+            </h3>
+            <p class="steps-ordering__text">
+              После утверждения стоимости и сроков запускаем проект в работу. Возможна предоплата или заключение договора.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="ordering__steps-card">
-        <div class="ordering__steps-inner">
-          <span class="ordering__steps-number">
-            4
-          </span>
-          <h3 class="ordering__steps-title .title-md">
-            Доставка или самовывоз
-          </h3>
-          <p class="ordering__steps-text">
-            Готовый заказ отправим удобным способом или подготовим к самовывозу.
-          </p>
+        <div class="steps-ordering__card">
+          <div class="steps-ordering__inner">
+            <span class="steps-ordering__number">
+              4
+            </span>
+            <h3 class="steps-ordering__title title-sm">
+              Доставка или самовывоз
+            </h3>
+            <p class="steps-ordering__text">
+              Готовый заказ отправим удобным способом или подготовим к самовывозу.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
   <section class="catalog">
-  <div class="catalog__inner container">
-    <h2 class="catalog__title title-md">
-      Популярные изделия на заказ
-    </h2>
-    <div class="catalog__link">
-      <a href="#!" class="catalog__link-btn">
-        смотреть весь каталог
-      </a>
-    </div>
-    <div class="catalog__products">
-      <div class="catalog__card">
-          <div class="catalog__thumbnail">
-            <img src="./img/catalog/fence1.jpg" alt="" class="catalog__img" width="300" height="300">
+  <div class="container">
+    <div class="catalog__inner">
+      <h2 class="catalog__title title-md">
+        Популярные изделия на заказ
+      </h2>
+      <div class="catalog__link">
+        <a href="#!" class="catalog__link-btn">
+          смотреть весь каталог
+        </a>
+      </div>
+      <div class="catalog__products">
+        <div class="catalog__card product-card">
+          <div class="product-card__thumbnail">
+            <img src="./img/catalog/fence1.jpg" alt="" class="product-card__img" width="300" height="300">
           </div>
-          <div class="catalog__slider">
-            <div class="catalog__slider-wrap">
-              <div class="catalog__slider-top">
-                <button type="button" class="catalog__slider-btn-close btn-close"></button>
+          <div class="product-card__slider product-slider">
+            <div class="product-slider__inner">
+              <div class="product-slider__top">
+                <button type="button" class="product-slider__close close-button">
+                  <span class="close-button__line"></span>
+                  <span class="close-button__line"></span>
+                </button>
               </div>
-              <div class="catalog__slider-center">
-                <div class="catalog__slider-content">
-                  <div class="catalog__slider-main">
-                    <img src="./img/catalog/fence1.jpg" alt="" class="catalog__slider-img">
+              <div class="product-slider__center">
+                <div class="product-slider__content">
+                  <div class="product-slider__main-img-wrap">
+                    <img src="./img/catalog/fence1.jpg" alt="" class="product-slider__main-img">
                   </div>
-                  <div class="catalog__slider-thumbnails">
-                    <img src="./img/catalog/fence1.jpg" class="catalog__slider-thumb is-active">
-                    <img src="./img/catalog/fence2.jpg" class="catalog__slider-thumb">
-                    <img src="./img/catalog/fence3.jpg" class="catalog__slider-thumb">
+                  <div class="product-slider__thumbnails-wrap">
+                    <div class="product-slider__thumbnails">
+                      <img src="./img/catalog/fence1.jpg" class="product-slider__thumb is-active">
+                      <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                                          <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                                          <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                                          <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="catalog__slider-togle">
-                <button type="button" class="btn-togle--prev"></button>
-                <button type="button" class="btn-togle--next"></button>
-              </div>
+              <!-- <div class="product-slider__togle">
+                <button type="button" class="product-slider__btn-togle--prev"></button>
+                <button type="button" class="product-slider__btn-togle--next"></button>
+              </div> -->
             </div>
           </div>
-        <div class="catalog__card-content">
-          <h3 class="catalog__card-title">
-            Ворота «Органик»
-          </h3>
-          <h4 class="catalog__card-subtitle">
-            Лазерная резка по металлу
-          </h4>
-          <p class="catalog__card-desc">
-            Современные декоративные ворота, изготовленные методом высокоточной лазерной резки. 
-            Уникальный органический узор придаёт конструкции легкость и стиль, сохраняя при этом прочность и устойчивость. 
-            Идеально подходят для частных домов, коттеджей, дизайнерских фасадов и загородных участков.
-          </p>
-          <a href="#!" class="catalog__card-link">Подробнее</a>
-          <div class="catalog__card-footer">
-            <span class="catalog__card-price">Цена от 199999</span>
-            <button class="catalog__card-btn button" type="button">Заказать</button>
+          <div class="product-card__content">
+            <h3 class="product-card__title">
+              Ворота «Органик»
+            </h3>
+            <h4 class="product-card__subtitle">
+              Лазерная резка по металлу
+            </h4>
+            <p class="product-card__desc">
+              Современные декоративные ворота, изготовленные методом высокоточной лазерной резки. 
+              Уникальный органический узор придаёт конструкции легкость и стиль, сохраняя при этом прочность и устойчивость. 
+              Идеально подходят для частных домов, коттеджей, дизайнерских фасадов и загородных участков.
+            </p>
+            <a href="#!" class="product-card__link">Подробнее</a>
+            <div class="product-card__footer">
+              <span class="product-card__price">Цена от 199999</span>
+              <button class="product-card__btn button" type="button">Заказать</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="catalog__card">
-          <div class="catalog__thumbnail">
-            <img src="./img/catalog/firewood1.jpg" alt="" class="catalog__img">
-          </div>
-          <div class="catalog__slider">
-            <div class="catalog__slider-wrap">
-              <div class="catalog__slider-top">
-                <button type="button" class="catalog__slider-btn-close btn-close"></button>
-              </div>
-              <div class="catalog__slider-center">
-                <div class="catalog__slider-content">
-                  <div class="catalog__slider-main">
-                    <img src="./img/catalog/firewood1.jpg" alt="" class="catalog__slider-img">
-                  </div>
-                  <div class="catalog__slider-thumbnails">
-                    <img src="./img/catalog/firewood1.jpg" alt="" class="catalog__slider-thumb is-active">
-                    <img src="./img/catalog/firewood2.jpg" alt="" class="catalog__slider-thumb">
+        <div class="catalog__card product-card">
+            <div class="product-card__thumbnail">
+              <img src="./img/catalog/firewood1.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__slider product-slider">
+              <div class="product-slider__inner">
+                <div class="product-slider__top">
+                  <button type="button" class="product-slider__close close-button">
+                    <span class="close-button__line"></span>
+                    <span class="close-button__line"></span>
+                  </button>
+                </div>
+                <div class="product-slider__center">
+                  <div class="product-slider__content">
+                    <div class="product-slider__main-img-wrap">
+                      <img src="./img/catalog/firewood1.jpg" alt="" class="product-slider__main-img">
+                    </div>
+                    <div class="product-slider__thumbnails-wrap">
+                      <div class="product-slider__thumbnails">
+                        <img src="./img/catalog/firewood1.jpg" alt="" class="product-slider__thumb is-active">
+                        <img src="./img/catalog/firewood2.jpg" alt="" class="product-slider__thumb">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="catalog__slider-togle">
-                <button type="button" class="btn-togle--prev"></button>
-                <button type="button" class="btn-togle--next"></button>
+                <!-- <div class="product-slider__togle">
+                  <button type="button" class="product-slider__btn-togle--prev"></button>
+                  <button type="button" class="product-slider__btn-togle--next"></button>
+                </div> -->
               </div>
             </div>
-          </div>
-        <div class="catalog__card-content">
-          <h3 class="catalog__card-title">
-            Дровник «Лесной Уют»
-          </h3>
-          <h4 class="catalog__card-subtitle">
-            Лазерная резка по металлу
-          </h4>
-          <p class="catalog__card-desc">
-            Функциональный и эстетичный дровник, выполненный с применением лазерной резки по металлу. 
-            Открытый узор обеспечивает хорошую вентиляцию и придаёт конструкции декоративный вид. 
-            Прочная металлическая рама гарантирует долговечность и устойчивость к погодным условиям. 
-            Идеален для хранения дров у загородных домов, бань и каминов, сочетая практичность и современный стиль.
-          </p>
-          <a href="#!" class="catalog__card-link">Подробнее</a>
-          <div class="catalog__card-footer">
-            <span class="catalog__card-price">Цена от 199999</span>
-            <button class="catalog__card-btn button" type="button">Заказать</button>
+          <div class="product-card__content">
+            <h3 class="product-card__title">
+              Дровник «Лесной Уют»
+            </h3>
+            <h4 class="product-card__subtitle">
+              Лазерная резка по металлу
+            </h4>
+            <p class="product-card__desc">
+              Функциональный и эстетичный дровник, выполненный с применением лазерной резки по металлу. 
+              Открытый узор обеспечивает хорошую вентиляцию и придаёт конструкции декоративный вид. 
+              Прочная металлическая рама гарантирует долговечность и устойчивость к погодным условиям. 
+              Идеален для хранения дров у загородных домов, бань и каминов, сочетая практичность и современный стиль.
+            </p>
+            <a href="#!" class="product-card__link">Подробнее</a>
+            <div class="product-card__footer">
+              <span class="product-card__price">Цена от 199999</span>
+              <button class="product-card__btn button" type="button">Заказать</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-  <section class="contacts">
-  <div class="contacts__inner container">
-    <div class="contacts__column">
-      <h2 class="contacts__title title-sm">Наши контакты</h2>
-      <div class="contacts__card">
-        <div class="contacts__card-wrap">
-          <a href="tel:+79181234567" class="contacts__item">
-            <svg class="header__contacts-icon" width="24" height="24">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
-            </svg>
-            +7(918)123-45-67
-          </a>
-          <a href="tel:+79181234567" class="contacts__item">
-            <svg class="header__contacts-icon" width="24" height="24">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
-            </svg>
-            +7(918)123-45-67
-          </a>
-          <a href="mailto:fasttools@gmail.com " class="contacts__item">
-            <svg class="header__contacts-icon" width="24" height="24">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#mail"></use>
-            </svg>
-            fasttools@gmail.com
-          </a>
+  <section class="feedback">
+  <div class="container">
+    <div class="feedback__inner">
+      <div class="feedback__column">
+        <h2 class="feedback__title title-sm">Наши контакты</h2>
+        <div class="feedback__card card-contacts">
+          <div class="card-contacts__wrap">
+            <a class="card-contacts__item" href="tel:+79181234567">
+              <svg class="card-contacts__icon" width="24" height="24">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
+              </svg>
+              +7(918)123-45-67
+            </a>
+            <a class="card-contacts__item" href="tel:+79181234567">
+              <svg class="card-contacts__icon" width="24" height="24">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
+              </svg>
+              +7(918)123-45-67
+            </a>
+            <a class="card-contacts__item" href="mailto:fasttools@gmail.com">
+              <svg class="card-contacts__icon" width="24" height="24">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#mail"></use>
+              </svg>
+              fasttools@gmail.com
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="contacts__column">
-      <h2 class="contacts__title title-sm">Форма обратной связи</h2>
-      <form action="#!" method="post" class="contacts__form">
-          <input type="text" name="name" placeholder="Имя" class="contacts__form-input" required>
-          <input type="tel" name="phone" placeholder="Телефон" class="contacts__form-input" required>
-          <input type="email" name="email" placeholder="E-Mail" class="contacts__form-input" required>
-          <textarea name="" class="contacts__form-textarea" placeholder="Сообщение" name="message" rows="5" required></textarea>
-          <div class="contacts__form-row">
-            <div class="contacts__form-capcha">capcha</div>
-            <button type="submit" class="contacts__form-btn button">Отправить</button>
-          </div>
-      </form>
+      <div class="feedback__column">
+        <h2 class="feedback__title title-sm">Форма обратной связи</h2>
+        <form class="feedback__form form-feedback" action="#!" method="post">
+            <input class="form-feedback__input input" type="text" name="name" placeholder="Имя" required>
+            <input class="form-feedback__input input" type="tel" name="phone" placeholder="Телефон" required>
+            <input class="form-feedback__input input" type="email" name="email" placeholder="E-Mail" required>
+            <textarea class="form-feedback__textarea textarea" name="" placeholder="Сообщение" name="message" rows="5" required></textarea>
+            <div class="form-feedback__row">
+              <div class="form-feedback__capcha">capcha</div>
+              <button class="form-feedback__btn button" type="submit">Отправить</button>
+            </div>
+        </form>
+      </div>
     </div>
   </div>
 </section>
   <footer class="footer">
-  <div class="footer__inner container">
-    <div class="footer__column">
-      <div class="footer__header">
-        <a href="/" class="footer__logo logo">
-          <img src="./img/logo.svg" alt="Fasttools logo" class="footer__logo-image" width="173" height="57">
-        </a>
-      </div>
-      <div class="footer__body">
-        <p class="footer__slogan">
-          Инженерные решения и лазерная точность.
-        </p>
-        <div class="footer__socials socials">
-          <a class="footer__socials-link link-accent" href="https://wa.me/79181234567" target="_blank" rel="noopener noreferrer">
-            <svg class="footer__socials-icon" width="20" height="20">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#whatsapp"></use>
-            </svg>
-          </a>
-          <a class="footer__socials-link link-accent" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
-            <svg class="footer__socials-icon" width="20" height="20">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#telegram"></use>
-            </svg>
-          </a>
-          <a class="footer__socials-link link-accent" href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
-            <svg class="footer__socials-icon" width="20" height="20">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#instagram"></use>
-            </svg>
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__column">
+        <div class="footer__header">
+          <a href="/" class="footer__logo logo">
+            <img src="./img/logo.svg" alt="Fasttools logo" class="footer__logo-image" width="173" height="57">
           </a>
         </div>
-      </div>
-    </div>
-    <div class="footer__column">
-      <div class="footer__header">
-        <div class="footer__title">Контакты</div>
-      </div>
-      <div class="footer__body">
-        <div class="footer__contacts">
-          <a class="footer__contacts-link link-accent" href="tel:+79181234567">
-            <svg class="footer__contacts-icon" width="20" height="20">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
-            </svg>
-            +7 (918) 123-45-67
-          </a>
-          <a class="footer__contacts-link link-accent" href="mailto:fasttools@gmail.com">
-            <svg class="footer__contacts-icon" width="20" height="20">
-              <use xlink:href="./img/icons/sprites/sprite-mono.svg#mail"></use>
-            </svg>
-            fasttools@gmail.com
-          </a>
+        <div class="footer__body">
+          <p class="footer__slogan">
+            Инженерные решения и лазерная точность.
+          </p>
+          <div class="footer__socials socials">
+            <a class="socials__link link-accent" href="https://wa.me/79181234567" target="_blank" rel="noopener noreferrer">
+              <svg class="socials__icon" width="20" height="20">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#whatsapp"></use>
+              </svg>
+            </a>
+            <a class="socials__link link-accent" href="https://t.me/your_username" target="_blank" rel="noopener noreferrer">
+              <svg class="socials__icon" width="20" height="20">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#telegram"></use>
+              </svg>
+            </a>
+            <a class="socials__link link-accent" href="https://instagram.com/username" target="_blank" rel="noopener noreferrer">
+              <svg class="socials__icon" width="20" height="20">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#instagram"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer__column">
-      <div class="footer__header">
-        <div class="footer__title">Карта сайта</div>
+      <div class="footer__column">
+        <div class="footer__header">
+          <div class="footer__title">Контакты</div>
+        </div>
+        <div class="footer__body">
+          <div class="footer__contacts">
+            <a class="footer__contacts-link link-accent" href="tel:+79181234567">
+              <svg class="footer__contacts-icon" width="20" height="20">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#phone"></use>
+              </svg>
+              +7 (918) 123-45-67
+            </a>
+            <a class="footer__contacts-link link-accent" href="mailto:fasttools@gmail.com">
+              <svg class="footer__contacts-icon" width="20" height="20">
+                <use xlink:href="./img/icons/sprites/sprite-mono.svg#mail"></use>
+              </svg>
+              fasttools@gmail.com
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer__body">
-        <nav class="footer__menu">
-          <ul class="footer__menu-list">
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link link-accent">Домой</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link link-accent">Каталог</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link link-accent">Контакты</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link link-accent">Блог</a>
-            </li>
-            <li class="footer__menu-item">
-              <a href="" class="footer__menu-link link-accent">О нас</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="footer__column">
+        <div class="footer__header">
+          <div class="footer__title">Карта сайта</div>
+        </div>
+        <div class="footer__body">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link link-accent">Домой</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link link-accent">Каталог</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link link-accent">Контакты</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link link-accent">Блог</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="" class="footer__menu-link link-accent">О нас</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
-    <div class="footer__offer">
-      Сайт носит информационный характер и не является публичной офертой.
+      <div class="footer__offer">
+        Сайт носит информационный характер и не является публичной офертой.
+      </div>
     </div>
   </div>
 </footer>
