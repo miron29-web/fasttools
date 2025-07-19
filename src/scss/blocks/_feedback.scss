@@ -1,3 +1,4 @@
+///========= feedback section ================================================
 .feedback{
   margin-bottom: var(--section-spacing);
 
@@ -21,6 +22,7 @@
   }
 }
 
+///========= feedback contacts card ================================================
 .card-contacts{
   display: flex;
   flex-direction: column;
@@ -55,6 +57,7 @@
   }
 }
 
+///========= feedback forms ================================================
 .form-feedback{
     display: flex;
     flex-direction: column;
@@ -93,9 +96,7 @@
     }
   }
 
-
-
-
+///========= feedback media ================================================
 @media (max-width: 700px) {
   .feedback__inner {
     grid-template-columns: 1fr;

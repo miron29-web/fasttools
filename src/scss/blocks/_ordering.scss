@@ -1,3 +1,4 @@
+///========= ordering section =========
 .ordering{
   display: flex;
   align-items: center;
@@ -22,6 +23,7 @@
   }
 }
 
+///========= ordering steps =========
 .steps-ordering{
   display: flex;
   flex-direction: row;
@@ -74,6 +76,7 @@
   }
 }
 
+///========= ordering media =========
 @media (max-width: 800px) {
   .steps-ordering__card{
     width: 100%;

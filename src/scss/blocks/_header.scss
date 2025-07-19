@@ -1,10 +1,11 @@
+///========= header section ================================================
 .header {
   background-color: var(--color-blue-dark);
   color: var(--color-white);
   font-size: 16px;
 }
 
-///========= Top header =========
+///========= header top ================================================
 .top-header{
   border-bottom: 1px solid;
   border-color: var(--color-border-grey);
@@ -30,7 +31,7 @@
     }
 }
 
-///========= Bottom header =========
+///========= header body ================================================
 .body-header{
   &__inner{
     min-height: 90px;
@@ -104,8 +105,7 @@
   }
 }
 
-///========= mobile menu =========
-
+///========= header mobile menu ================================================
 .mobile-menu{
   position: fixed;
   top: 0;
@@ -173,8 +173,7 @@
 
 }
 
-///========= media =========
-
+///========= header media ================================================
 @media (min-width: 721px) {
   .actions__burger {
     display: none;

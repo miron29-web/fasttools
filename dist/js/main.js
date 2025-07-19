@@ -9,16 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/components/auth.js":
-/*!***********************************!*\
-  !*** ./src/js/components/auth.js ***!
-  \***********************************/
-/***/ (() => {
-
-eval("const authBtn = document.querySelector('.header__actions-auth');\r\nconst authOverlay = document.querySelector('.header__auth');\r\nconst authClose = document.querySelector('.header__auth-close');\r\n\r\nconst btnReg = document.querySelector('.header__auth-link-reg');\r\nconst btnAuth = document.querySelector('.header__auth-link-auth');\r\n\r\nconst login = document.querySelector('.header__auth-login');\r\nconst reg = document.querySelector('.header__auth-register');\r\n\r\nauthBtn.addEventListener('click', () => {\r\n  authOverlay.classList.add('is-active');\r\n});\r\n\r\nauthClose.addEventListener('click', () => {\r\n  authOverlay.classList.remove('is-active');\r\n});\r\n\r\nbtnReg.addEventListener('click', () => {\r\n  login.classList.remove('is-active');\r\n  reg.classList.add('is-active');\r\n});\r\n\r\nbtnAuth.addEventListener('click', () => {\r\n  reg.classList.remove('is-active');\r\n  login.classList.add('is-active');\r\n});\n\n//# sourceURL=webpack://gulp-project/./src/js/components/auth.js?");
-
-/***/ }),
-
 /***/ "./src/js/components/catalog_slider.js":
 /*!*********************************************!*\
   !*** ./src/js/components/catalog_slider.js ***!
@@ -56,7 +46,7 @@ eval("const slidesContainer = document.querySelector('.slider__slides');\r\ncons
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/mobile_menu */ \"./src/js/components/mobile_menu.js\");\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_slider__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/catalog_slider */ \"./src/js/components/catalog_slider.js\");\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/auth */ \"./src/js/components/auth.js\");\n/* harmony import */ var _components_auth__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_auth__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://gulp-project/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/mobile_menu */ \"./src/js/components/mobile_menu.js\");\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_slider__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/catalog_slider */ \"./src/js/components/catalog_slider.js\");\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\n\n//# sourceURL=webpack://gulp-project/./src/js/main.js?");
 
 /***/ })
 

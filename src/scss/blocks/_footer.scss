@@ -1,3 +1,4 @@
+///========= footer section ================================================
 .footer{
   background-color: var(--color-blue-dark);
   color: var(--color-white);
@@ -69,6 +70,7 @@
   }
 }
 
+///========= footer media ================================================
 @media (max-width: 480px) {
   .footer__inner {
     justify-content: center;
