@@ -40,10 +40,22 @@ svg{
   font-weight: 500;
 }
 
-.link-accent{
+a.link-accent{
   transition-duration: var(--transition-duration);
 
   &:hover{
     color: var(--color-accent);
   }
 }
+
+a.is-active{
+  &::after{
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 6px;
+    height: 2px;
+    background-color: var(--color-accent);
+  }
+    }

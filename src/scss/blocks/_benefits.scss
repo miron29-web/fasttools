@@ -7,87 +7,100 @@
     margin-bottom: 64px;
   }
 
-  &__list{
+  &__row{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(372px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 28px;
   }
 
-  &__card{
-    width: 364px;
+  &__column{
+  }
+}
+
+.card-benefits{
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin: 4px;
+  
+  &:hover, &:active{
+      .card-benefits__image{
+        transform: scale(1.08);
+    }
+  }
+
+  &__image-wrap{
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background-color: var(--color-blue-dark);
+  }
+
+  &__image{
     transition: transform 0.3s ease;
-    
-    &:hover{
-      transform: scale(1.1);
-    }
-
-    &-image{
-      height: 66%;
-      width: 100%;
-    }
-
-    &-img{
-      height: 100%;
-      width: 100%;
-    }
-
-    &-content{
-      display: flex;
-      height: 112px;
-    }
-
-    &-text{
-      background-color: var(--color-blue-dark);
-
-      color: var(--color-white);
-      width: 100%;
-      height: 100%;
-
-      padding-left: 5px;
-    }
-
-    &-title{
-      margin-top: 8px;
-
-      font-size: 20px;
-      font-weight: 500;
-    }
-
-    &-desc{
-      font-size: 14px;
-      font-weight: 300;
-    }
-
-    &-icon{ 
-      background-color: var(--color-accent);
-
-      width: 75px;
-    }
-
-    &-svg{
-      fill: #fff;
-      stroke: none;
-
-      margin: 0 auto;
-      margin-top: 8px;
-    }
-  }
-}
-
-@media (max-width: 1179px) {
-  .benefits__list{
-    justify-items: center;
-  }
-}
-
-@media (max-width: 400px) {
-  .benefits__card{
-    width: 280px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
-  .benefits__list{
+  &__content{
     display: grid;
-    grid-template-columns: unset;
-    gap: 20px;
+    grid-template-columns: auto 1fr;
+  }
+
+  &__text-wrap{
+    background-color: var(--color-blue-dark);
+
+    color: var(--color-white);
+    width: 100%;
+    height: 100%;
+
+    padding: 8px;
+  }
+
+  &__title{
+    margin-top: 8px;
+
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__desc{
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__icon-wrap{ 
+    background-color: var(--color-accent);
+
+    width: 75px;
+  }
+
+  &__icon{
+    fill: #fff;
+    stroke: none;
+
+    margin: 0 auto;
+    margin-top: 8px;
   }
 }
+
+
+@media (max-width: 800px) {
+  .benefits__row{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
+    justify-content: center;
+  }
+
+  .card-benefits{
+    
+  }
+}
+
+// @media (max-width: 420px) {
+//   .benefits__row{
+//     grid-template-columns: repeat(auto-fit, 320px);
+//     justify-content: center;
+//   }
+  
+// }

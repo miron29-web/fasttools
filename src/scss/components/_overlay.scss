@@ -1,0 +1,23 @@
+.overlay{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  background-color: var(--color-blue-dark);
+
+  &.is-active {
+    transform: translateY(0);
+  }
+
+  &-inner{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+}

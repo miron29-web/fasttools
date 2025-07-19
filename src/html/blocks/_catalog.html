@@ -1,103 +1,121 @@
 <section class="catalog">
-  <div class="catalog__inner container">
-    <h2 class="catalog__title title-md">
-      Популярные изделия на заказ
-    </h2>
-    <div class="catalog__link">
-      <a href="#!" class="catalog__link-btn">
-        смотреть весь каталог
-      </a>
-    </div>
-    <div class="catalog__products">
-      <div class="catalog__card">
-          <div class="catalog__thumbnail">
-            <img src="./img/catalog/fence1.jpg" alt="" class="catalog__img" width="300" height="300">
+  <div class="container">
+    <div class="catalog__inner">
+      <h2 class="catalog__title title-md">
+        Популярные изделия на заказ
+      </h2>
+      <div class="catalog__link">
+        <a href="#!" class="catalog__link-btn">
+          смотреть весь каталог
+        </a>
+      </div>
+      <div class="catalog__products">
+        <div class="catalog__card product-card">
+          <div class="product-card__thumbnail">
+            <img src="./img/catalog/fence1.jpg" alt="" class="product-card__img" width="300" height="300">
           </div>
-          <div class="catalog__slider">
-            <div class="catalog__slider-wrap">
-              <div class="catalog__slider-top">
-                <button type="button" class="catalog__slider-btn-close btn-close"></button>
+          <div class="product-card__slider product-slider">
+            <div class="product-slider__inner">
+              <div class="product-slider__top">
+                <button type="button" class="product-slider__close close-button">
+                  <span class="close-button__line"></span>
+                  <span class="close-button__line"></span>
+                </button>
               </div>
-              <div class="catalog__slider-center">
-                <div class="catalog__slider-content">
-                  <div class="catalog__slider-main">
-                    <img src="./img/catalog/fence1.jpg" alt="" class="catalog__slider-img">
+              <div class="product-slider__center">
+                <div class="product-slider__content">
+                  <div class="product-slider__main-img-wrap">
+                    <img src="./img/catalog/fence1.jpg" alt="" class="product-slider__main-img">
                   </div>
-                  <div class="catalog__slider-thumbnails">
-                    <img src="./img/catalog/fence1.jpg" class="catalog__slider-thumb is-active">
-                    <img src="./img/catalog/fence2.jpg" class="catalog__slider-thumb">
-                    <img src="./img/catalog/fence3.jpg" class="catalog__slider-thumb">
+                  <div class="product-slider__thumbnails-wrap">
+                    <div class="product-slider__thumbnails">
+                      <img src="./img/catalog/fence1.jpg" class="product-slider__thumb is-active">
+                      <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                                          <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                                          <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                                          <img src="./img/catalog/fence2.jpg" class="product-slider__thumb">
+                      <img src="./img/catalog/fence3.jpg" class="product-slider__thumb">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="catalog__slider-togle">
-                <button type="button" class="btn-togle--prev"></button>
-                <button type="button" class="btn-togle--next"></button>
-              </div>
+              <!-- <div class="product-slider__togle">
+                <button type="button" class="product-slider__btn-togle--prev"></button>
+                <button type="button" class="product-slider__btn-togle--next"></button>
+              </div> -->
             </div>
           </div>
-        <div class="catalog__card-content">
-          <h3 class="catalog__card-title">
-            Ворота «Органик»
-          </h3>
-          <h4 class="catalog__card-subtitle">
-            Лазерная резка по металлу
-          </h4>
-          <p class="catalog__card-desc">
-            Современные декоративные ворота, изготовленные методом высокоточной лазерной резки. 
-            Уникальный органический узор придаёт конструкции легкость и стиль, сохраняя при этом прочность и устойчивость. 
-            Идеально подходят для частных домов, коттеджей, дизайнерских фасадов и загородных участков.
-          </p>
-          <a href="#!" class="catalog__card-link">Подробнее</a>
-          <div class="catalog__card-footer">
-            <span class="catalog__card-price">Цена от 199999</span>
-            <button class="catalog__card-btn button" type="button">Заказать</button>
+          <div class="product-card__content">
+            <h3 class="product-card__title">
+              Ворота «Органик»
+            </h3>
+            <h4 class="product-card__subtitle">
+              Лазерная резка по металлу
+            </h4>
+            <p class="product-card__desc">
+              Современные декоративные ворота, изготовленные методом высокоточной лазерной резки. 
+              Уникальный органический узор придаёт конструкции легкость и стиль, сохраняя при этом прочность и устойчивость. 
+              Идеально подходят для частных домов, коттеджей, дизайнерских фасадов и загородных участков.
+            </p>
+            <a href="#!" class="product-card__link">Подробнее</a>
+            <div class="product-card__footer">
+              <span class="product-card__price">Цена от 199999</span>
+              <button class="product-card__btn button" type="button">Заказать</button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="catalog__card">
-          <div class="catalog__thumbnail">
-            <img src="./img/catalog/firewood1.jpg" alt="" class="catalog__img">
-          </div>
-          <div class="catalog__slider">
-            <div class="catalog__slider-wrap">
-              <div class="catalog__slider-top">
-                <button type="button" class="catalog__slider-btn-close btn-close"></button>
-              </div>
-              <div class="catalog__slider-center">
-                <div class="catalog__slider-content">
-                  <div class="catalog__slider-main">
-                    <img src="./img/catalog/firewood1.jpg" alt="" class="catalog__slider-img">
-                  </div>
-                  <div class="catalog__slider-thumbnails">
-                    <img src="./img/catalog/firewood1.jpg" alt="" class="catalog__slider-thumb is-active">
-                    <img src="./img/catalog/firewood2.jpg" alt="" class="catalog__slider-thumb">
+        <div class="catalog__card product-card">
+            <div class="product-card__thumbnail">
+              <img src="./img/catalog/firewood1.jpg" alt="" class="product-card__img">
+            </div>
+            <div class="product-card__slider product-slider">
+              <div class="product-slider__inner">
+                <div class="product-slider__top">
+                  <button type="button" class="product-slider__close close-button">
+                    <span class="close-button__line"></span>
+                    <span class="close-button__line"></span>
+                  </button>
+                </div>
+                <div class="product-slider__center">
+                  <div class="product-slider__content">
+                    <div class="product-slider__main-img-wrap">
+                      <img src="./img/catalog/firewood1.jpg" alt="" class="product-slider__main-img">
+                    </div>
+                    <div class="product-slider__thumbnails-wrap">
+                      <div class="product-slider__thumbnails">
+                        <img src="./img/catalog/firewood1.jpg" alt="" class="product-slider__thumb is-active">
+                        <img src="./img/catalog/firewood2.jpg" alt="" class="product-slider__thumb">
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="catalog__slider-togle">
-                <button type="button" class="btn-togle--prev"></button>
-                <button type="button" class="btn-togle--next"></button>
+                <!-- <div class="product-slider__togle">
+                  <button type="button" class="product-slider__btn-togle--prev"></button>
+                  <button type="button" class="product-slider__btn-togle--next"></button>
+                </div> -->
               </div>
             </div>
-          </div>
-        <div class="catalog__card-content">
-          <h3 class="catalog__card-title">
-            Дровник «Лесной Уют»
-          </h3>
-          <h4 class="catalog__card-subtitle">
-            Лазерная резка по металлу
-          </h4>
-          <p class="catalog__card-desc">
-            Функциональный и эстетичный дровник, выполненный с применением лазерной резки по металлу. 
-            Открытый узор обеспечивает хорошую вентиляцию и придаёт конструкции декоративный вид. 
-            Прочная металлическая рама гарантирует долговечность и устойчивость к погодным условиям. 
-            Идеален для хранения дров у загородных домов, бань и каминов, сочетая практичность и современный стиль.
-          </p>
-          <a href="#!" class="catalog__card-link">Подробнее</a>
-          <div class="catalog__card-footer">
-            <span class="catalog__card-price">Цена от 199999</span>
-            <button class="catalog__card-btn button" type="button">Заказать</button>
+          <div class="product-card__content">
+            <h3 class="product-card__title">
+              Дровник «Лесной Уют»
+            </h3>
+            <h4 class="product-card__subtitle">
+              Лазерная резка по металлу
+            </h4>
+            <p class="product-card__desc">
+              Функциональный и эстетичный дровник, выполненный с применением лазерной резки по металлу. 
+              Открытый узор обеспечивает хорошую вентиляцию и придаёт конструкции декоративный вид. 
+              Прочная металлическая рама гарантирует долговечность и устойчивость к погодным условиям. 
+              Идеален для хранения дров у загородных домов, бань и каминов, сочетая практичность и современный стиль.
+            </p>
+            <a href="#!" class="product-card__link">Подробнее</a>
+            <div class="product-card__footer">
+              <span class="product-card__price">Цена от 199999</span>
+              <button class="product-card__btn button" type="button">Заказать</button>
+            </div>
           </div>
         </div>
       </div>

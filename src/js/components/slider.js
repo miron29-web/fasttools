@@ -1,5 +1,5 @@
 const slidesContainer = document.querySelector('.slider__slides');
-const slides = document.querySelectorAll('.slider__slide-image');
+const slides = document.querySelectorAll('.slide__image');
 const controlsContainer = document.querySelector('.slider__controls');
 
 let currentIndex = 0;
@@ -18,7 +18,7 @@ slides.forEach((_, index) => {
 const controlsBtn = document.querySelectorAll('.slider__controls-btn');
 
 function goToSlide(index) {
-  const allContents = document.querySelectorAll('.slider__content');
+  const allContents = document.querySelectorAll('.slide__content');
   allContents.forEach(content => content.classList.remove('is-active'));
 
   slidesContainer.style.transform = `translateX(-${index * 100}%)`;
@@ -28,7 +28,7 @@ function goToSlide(index) {
 
   setTimeout(() => {
     const currentSlide = document.querySelectorAll('.slider__slide')[index];
-    const content = currentSlide.querySelector('.slider__content');
+    const content = currentSlide.querySelector('.slide__content');
     content.classList.add('is-active');
     currentIndex = index;
   }, 300);

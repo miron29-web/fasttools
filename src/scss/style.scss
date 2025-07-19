@@ -5,7 +5,9 @@
 @use './base/base';
 
 //components
+@use './components/overlay';
 @use './components/buttons';
+@use './components/forms';
 @use './components/socials';
 @use './components/logo';
 
@@ -17,5 +19,5 @@
 @use './blocks/benefits';
 @use './blocks/ordering';
 @use './blocks/catalog';
-@use './blocks/contacts';
+@use './blocks/feedback';
 @use './blocks/footer';
