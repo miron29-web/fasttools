@@ -29,6 +29,16 @@ eval("\r\nconst burgerBtn = document.querySelector('.actions__burger.burger');\r
 
 /***/ }),
 
+/***/ "./src/js/components/scroll_animation.js":
+/*!***********************************************!*\
+  !*** ./src/js/components/scroll_animation.js ***!
+  \***********************************************/
+/***/ (() => {
+
+eval("const animItems = document.querySelectorAll('._anim-item');\r\n\r\nif (animItems.length > 0){\r\n  window.addEventListener('scroll', animOnScroll);\r\n  function animOnScroll(param){\r\n    for (let index = 0; index < animItems.length; index++){\r\n      const animItem = animItems[index];\r\n      const animItemHeight = animItem.offsetHeight;\r\n      const animItemOffset = offset(animItem).top;\r\n      const animStart = 4;\r\n\r\n      let animItemPoint = window.innerHeight - animItemHeight / animStart;\r\n\r\n      if (animItemHeight > window.innerHeight){\r\n        animItemPoint = window.innerHeight - animItemHeight / animStart;\r\n      }\r\n\r\n      if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){\r\n        animItem.classList.add('_active');\r\n      } else {\r\n        if (!animItem.classList.contains('_anim-no-hide')){\r\n          animItem.classList.remove('_active');\r\n        }\r\n      }\r\n    } \r\n  }\r\n\r\n  function offset(el) {\r\n    const rect = el.getBoundingClientRect(),\r\n      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,\r\n      scrollTop = window.pageYOffset || document.documentElement.scrollTop;\r\n    return {top: rect.top + scrollTop, left: rect.left + scrollLeft}\r\n  }\r\n\r\n  setTimeout(() => {\r\n    animOnScroll();\r\n  }, 300); \r\n\r\n}\r\n\r\n\n\n//# sourceURL=webpack://gulp-project/./src/js/components/scroll_animation.js?");
+
+/***/ }),
+
 /***/ "./src/js/components/slider.js":
 /*!*************************************!*\
   !*** ./src/js/components/slider.js ***!
@@ -46,7 +56,7 @@ eval("const slidesContainer = document.querySelector('.slider__slides');\r\ncons
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/mobile_menu */ \"./src/js/components/mobile_menu.js\");\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_slider__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/catalog_slider */ \"./src/js/components/catalog_slider.js\");\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\n\n//# sourceURL=webpack://gulp-project/./src/js/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/mobile_menu */ \"./src/js/components/mobile_menu.js\");\n/* harmony import */ var _components_mobile_menu__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_components_mobile_menu__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/slider */ \"./src/js/components/slider.js\");\n/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_slider__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/catalog_slider */ \"./src/js/components/catalog_slider.js\");\n/* harmony import */ var _components_catalog_slider__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_catalog_slider__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_scroll_animation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/scroll_animation */ \"./src/js/components/scroll_animation.js\");\n/* harmony import */ var _components_scroll_animation__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_scroll_animation__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://gulp-project/./src/js/main.js?");
 
 /***/ })
 
