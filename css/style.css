@@ -225,6 +225,18 @@ a.is-active::after {
   background-color: var(--color-accent);
 }
 
+._anim-show {
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
 .overlay {
   display: flex;
   flex-direction: column;
@@ -675,26 +687,10 @@ a.is-active::after {
   margin-bottom: 1rem;
   border-bottom: 0.125rem solid;
   border-color: var(--color-accent);
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.intro__title._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 
 .intro__text {
   font-size: 1.5rem;
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.intro__text._active {
-  transform: translate(0, 0);
-  opacity: 1;
   transition: all 0.8s ease 0.4s;
 }
 
@@ -723,28 +719,12 @@ a.is-active::after {
 
 .about__title {
   margin-bottom: 0.75rem;
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.about__title._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 
 .about__text {
   max-width: 50rem;
   font-size: var(--font-base-size);
   letter-spacing: 0.125rem;
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.about__text._active {
-  transform: translate(0, 0);
-  opacity: 1;
   transition: all 0.8s ease 0.4s;
 }
 
@@ -755,14 +735,6 @@ a.is-active::after {
 .benefits__title {
   text-align: center;
   margin-bottom: 4rem;
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.benefits__title._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 
 .benefits__row {
@@ -852,14 +824,6 @@ a.is-active::after {
 .ordering__title {
   text-align: center;
   margin-bottom: 1.25rem;
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.ordering__title._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 
 .steps-ordering {
@@ -925,28 +889,12 @@ a.is-active::after {
 
 .catalog__title {
   text-align: center;
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.catalog__title._active {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 
 .catalog__link {
   display: flex;
   justify-content: center;
   margin: 1.5rem 0 2.875rem;
-  transform: translate(0, 120%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-
-.catalog__link._active {
-  transform: translate(0, 0);
-  opacity: 1;
   transition: all 0.8s ease 0.4s;
 }
 
@@ -1116,6 +1064,7 @@ a.is-active::after {
   width: fit-content;
   height: auto;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   position: absolute;
 }
 
