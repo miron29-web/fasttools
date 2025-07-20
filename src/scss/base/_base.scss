@@ -59,3 +59,15 @@ a.is-active{
     background-color: var(--color-accent);
   }
     }
+
+._anim-show{
+  transform: translate(0, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show._active,
+._active ._anim-show{
+  transform: translate(0, 0);
+  opacity: 1;
+}

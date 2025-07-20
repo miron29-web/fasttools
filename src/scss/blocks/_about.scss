@@ -26,15 +26,6 @@
 
   &__title{
     margin-bottom: 12px;
-
-    transform: translate(0, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-
-    &._active{
-      transform: translate(0, 0);
-      opacity: 1;
-    }
   }
 
   &__text{
@@ -43,15 +34,7 @@
     font-size: var(--font-base-size);
     letter-spacing: 2px;
 
-    transform: translate(0, 120%);
-    opacity: 0;
-    transition: all 0.8s ease 0s;
-
-    &._active{
-      transform: translate(0, 0);
-      opacity: 1;
-      transition: all 0.8s ease 0.4s;
-    }
+    transition: all 0.8s ease 0.4s;
   }
 }
 
